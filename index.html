@@ -7,85 +7,86 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="app-container">
-        <!-- Left Navigation Bar -->
-        <nav class="sidebar">
-            <h3>✍️ Formatting Tools</h3>
+    <div class="main-wrapper">
+        <div class="container">
+            <h1>✍️ Writing & Translation Tool</h1>
             
-            <div class="nav-section">
-                <h4>Font Settings</h4>
-                <label>Font Family:</label>
-                <select id="fontFamily">
-                    <option value="Georgia, serif">Georgia</option>
-                    <option value="'Times New Roman', serif">Times New Roman</option>
-                    <option value="Arial, sans-serif">Arial</option>
-                    <option value="'Courier New', monospace">Courier New</option>
-                    <option value="Verdana, sans-serif">Verdana</option>
-                    <option value="'Trebuchet MS', sans-serif">Trebuchet MS</option>
-                </select>
+            <!-- Formatting Section -->
+            <div class="formatting-section">
+                <h2>Formatting Tools</h2>
                 
-                <label>Font Size:</label>
-                <select id="fontSize">
-                    <option value="12px">12px</option>
-                    <option value="14px">14px</option>
-                    <option value="16px" selected>16px</option>
-                    <option value="18px">18px</option>
-                    <option value="20px">20px</option>
-                    <option value="24px">24px</option>
-                </select>
-            </div>
-            
-            <div class="nav-section">
-                <h4>Layout</h4>
-                <label>Columns:</label>
-                <select id="columns">
-                    <option value="1" selected>Single Column</option>
-                    <option value="2">Two Columns</option>
-                    <option value="3">Three Columns</option>
-                </select>
+                <div class="formatting-grid">
+                    <div class="format-group">
+                        <label>Font Family:</label>
+                        <select id="fontFamily">
+                            <option value="Georgia, serif">Georgia</option>
+                            <option value="'Times New Roman', serif">Times New Roman</option>
+                            <option value="Arial, sans-serif">Arial</option>
+                            <option value="'Courier New', monospace">Courier New</option>
+                            <option value="Verdana, sans-serif">Verdana</option>
+                            <option value="'Trebuchet MS', sans-serif">Trebuchet MS</option>
+                        </select>
+                    </div>
+                    
+                    <div class="format-group">
+                        <label>Font Size:</label>
+                        <select id="fontSize">
+                            <option value="12px">12px</option>
+                            <option value="14px">14px</option>
+                            <option value="16px" selected>16px</option>
+                            <option value="18px">18px</option>
+                            <option value="20px">20px</option>
+                            <option value="24px">24px</option>
+                        </select>
+                    </div>
+                    
+                    <div class="format-group">
+                        <label>Columns:</label>
+                        <select id="columns">
+                            <option value="1" selected>Single Column</option>
+                            <option value="2">Two Columns</option>
+                            <option value="3">Three Columns</option>
+                        </select>
+                    </div>
+                    
+                    <div class="format-group">
+                        <label>Margins:</label>
+                        <select id="margins">
+                            <option value="15px">Narrow</option>
+                            <option value="30px" selected>Normal</option>
+                            <option value="50px">Wide</option>
+                            <option value="80px">Extra Wide</option>
+                        </select>
+                    </div>
+                    
+                    <div class="format-group">
+                        <label>Line Height:</label>
+                        <select id="lineHeight">
+                            <option value="1.3">Tight</option>
+                            <option value="1.6" selected>Normal</option>
+                            <option value="2.0">Loose</option>
+                            <option value="2.5">Extra Loose</option>
+                        </select>
+                    </div>
+                    
+                    <div class="format-group">
+                        <label>Paragraph Spacing:</label>
+                        <select id="paragraphSpacing">
+                            <option value="10px">Small</option>
+                            <option value="20px" selected>Medium</option>
+                            <option value="30px">Large</option>
+                        </select>
+                    </div>
+                </div>
                 
-                <label>Margins:</label>
-                <select id="margins">
-                    <option value="15px">Narrow</option>
-                    <option value="30px" selected>Normal</option>
-                    <option value="50px">Wide</option>
-                    <option value="80px">Extra Wide</option>
-                </select>
-            </div>
-            
-            <div class="nav-section">
-                <h4>Paragraph Settings</h4>
-                <label>Line Height:</label>
-                <select id="lineHeight">
-                    <option value="1.3">Tight (1.3)</option>
-                    <option value="1.6" selected>Normal (1.6)</option>
-                    <option value="2.0">Loose (2.0)</option>
-                    <option value="2.5">Extra Loose (2.5)</option>
-                </select>
-                
-                <label>Paragraph Spacing:</label>
-                <select id="paragraphSpacing">
-                    <option value="10px">Small</option>
-                    <option value="20px" selected>Medium</option>
-                    <option value="30px">Large</option>
-                </select>
-            </div>
-            
-            <div class="nav-section">
                 <button id="resetBtn" class="reset-button">Reset to Default</button>
             </div>
-        </nav>
-        
-        <!-- Main Content Area -->
-        <div class="main-content">
-            <div class="container">
-                <h1>✍️ Writing & Translation Tool</h1>
-                
-                <div class="editor-section">
-                    <h2>Your Writing Space</h2>
-                    <textarea id="editor" placeholder="Start writing here..."></textarea>
-                    <div class="word-count">Words: <span id="wordCount">0</span></div>
-                </div>
+            
+            <!-- Writing Section -->
+            <div class="editor-section">
+                <h2>Your Writing Space</h2>
+                <textarea id="editor" placeholder="Start writing here..."></textarea>
+                <div class="word-count">Words: <span id="wordCount">0</span></div>
             </div>
         </div>
     </div>
