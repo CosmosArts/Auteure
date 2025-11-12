@@ -18,6 +18,9 @@ body {
     border-radius: 15px;
     padding: 30px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    min-height: calc(100vh - 40px);
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
@@ -39,7 +42,8 @@ h2 {
 
 textarea {
     width: 100%;
-    min-height: 300px;
+    flex: 1;
+    min-height: 400px;
     padding: 15px;
     font-size: 16px;
     border: 2px solid #ddd;
@@ -64,4 +68,10 @@ textarea:focus {
 #wordCount {
     font-weight: bold;
     color: #667eea;
+}
+
+.editor-section {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
